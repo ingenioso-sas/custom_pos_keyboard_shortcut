@@ -1,68 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" extend_id="point_of_sale.template">
 
-    <t t-extend="ProductScreenWidget">
-        <t t-jquery=".product-screen" t-operation="replace">
-            <div class="product-screen screen">
-                <div class="leftpane">
-                    <div class='window'>
-                        <div class='subwindow'>
-                            <div class='subwindow-container'>
-                                <div class='subwindow-container-fix'>
-                                    <div class="placeholder-OrderWidget"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="middlepane">
-                    <div class="window">
-                        <div class='subwindow collapsed'>
-                            <div class='subwindow-container'>
-                                <div class='subwindow-container-fix pads'>
-                                    <div class="control-buttons oe_hidden"></div>
-                                    <div class="placeholder-ActionpadWidget"></div>
-                                    <div class="placeholder-NumpadWidget"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rightpane">
-                    <table class="layout-table">
+<!--    <t t-extend="ProductCategoriesWidget">-->
+<!--        <t t-jquery="div" t-operation="replace">-->
+<!--            <header class='rightpane-header'>-->
+<!--                <div class="searchbox">-->
+<!--                    <input type="test" class="search-input" placeholder="Search Products" autofocus="true" accesskey="s"/>-->
+<!--                    <span class="search-clear"/>-->
+<!--                </div>-->
+<!--            </header>-->
+<!--        </t>-->
+<!--    </t>-->
 
-                        <tr class="header-row">
-                            <td class="header-cell" colspan="2">
-                                <span class="placeholder-ProductCategoriesWidget" />
-                            </td>
-                        </tr>
-
-                        <tr class="content-row">
-                            <td class="content-cell">
-                                <div class="content-container">
-                                    <span class="placeholder-ProductListWidget" />
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-            </div>
-        </t>
-    </t>
-
-    <t t-extend="ProductCategoriesWidget">
-        <t t-jquery="div" t-operation="replace">
-            <header class='rightpane-header'>
-                <div class="searchbox">
-                    <input type="test" class="search-input" placeholder="Search Products" autofocus="true" accesskey="s"/>
-                    <span class="search-clear"/>
-                </div>
-            </header>
-        </t>
-    </t>
-
-    <!-- for keyboard shortcut help button and details -->
+<!-- for keyboard shortcut help button and details -->
     <t t-extend="NumpadWidget">
 		<t t-jquery=".numpad" t-operation="after">
 			<span class="control-button" id="shortcut_tips_btn" style="width: 384px;margin-right: 5px;margin-top: -8px;">
@@ -79,82 +29,81 @@
                     <h3>Important Instruction (must read):</h3>
                     <div style="width:100%;text-align:left;">
                         <ul>
-                            <li style="font-size:16px;color:red;">Cursor will be default focused on product search panel when POS Home Screen (Product Screen) will be opened. In this time keyboard shortcut keys won't work except <b>"Tab"</b> and <b>"F2"</b> shortcut buttons. Now, search product and press <b>"Tab"</b> button to switch focus on product selection. Then all keyboard shortcut keys will work.</li>
-                            <li style="font-size:16px;color:red;">Press <b>"F2"</b> button to get shortcut help.</li>
+                            <li style="font-size:16px;color:red;">Presionar la letra correspondiente activara el comando, por ejemplo, para definir cantidad presionar la tecla "D". Pero cuando el foco esta puesto en el campo de busqueda, los comandos no funcionaran, exepto <b>"Tab"</b> o <b>"F2"</b>, de clic en otra parte que no sea la busqueda o presione TAB, para recuperar los camando de letras., o para forzar que los comandos funcionen aunque este el foco en busqueda, presionar la tecla ctrl seguida de la letra del comando, por ejemplo, para Definir cantidad presionar Ctrl+D.</li>
+                            <li style="font-size:16px;color:red;">Presionar <b>"F2"</b> para mostrar esta ayuda.</li>
                         </ul>
                     </div>
-                    <h3>Product/Home Screen</h3>
+                    <h3>Vista de los productos</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Shortcut Key</th><th>Action Description</th>
+                            <th>Atajos de teclado</th><th>Descripcion</th>
                         </tr>
                         <tr><td width="25%">F2</td><td width="75%">Sortcut Tips</td></tr>
-                        <tr><td>S</td><td>Product search</td></tr>
-                        <tr><td>Tab</td><td>Switch focus product search panel to individual product and one to another product</td></tr>
-                        <tr><td>Q</td><td>Numeric pad "Qty" button select to change product line quantity</td></tr>
-                        <tr><td>D</td><td>Numeric pad "Disc" button select to change product line discount</td></tr>
-                        <tr><td>P</td><td>Numeric pad "Price" button select to change product line price</td></tr>
-                        <tr><td>Backspace</td><td>Delete last number for "Qty", "Disc" and "Price"</td></tr>
-                        <tr><td>0-9 (Numpad)</td><td>Change number for "Qty", "Disc" and "Price"</td></tr>
-                        <tr><td>. (Numpad)</td><td>Point for numbers</td></tr>
-                        <tr><td>- (Numpad)</td><td>Switch number to negetive or positive</td></tr>
-                        <tr><td>C</td><td>Open customer screen</td></tr>
-                        <tr><td>Spacebar</td><td>Open payment screen</td></tr>
-                        <tr><td>Delete</td><td>Delete selected order line from cart</td></tr>
-                        <tr><td>Arrow Up</td><td>Change selection of cart order line to up direction</td></tr>
-                        <tr><td>Arrow Down</td><td>Change selection of cart order line to down direction</td></tr>
+                        <tr><td>Ctrl+F</td><td>Buscar</td></tr>
+                        <tr><td>Tab</td><td>Intercambia entre negativo y positivo la cantidad de la linea de producto seleccionado.</td></tr>
+                        <tr><td>C / Ctrl + C</td><td>Selecciona boton de "Cantidad" en el tablero numerico para cambiar la cantidad de la linea de producto.</td></tr>
+                        <tr><td>D / Ctrl + D</td><td>Selecciona boton de "Descuento" en el tablero numerico para cambiar el Descuento de la linea de producto.</td></tr>
+                        <tr><td>P / Ctrl + P</td><td>Selecciona boton de "Precio" en el tablero numerico para cambiar el Precio de la linea de producto.</td></tr>
+                        <tr><td>Rtroceso</td><td>Elimina el ultimo numero seleccionado de "Cantidad", "Descuento" o "Precio"</td></tr>
+                        <tr><td>0-9 (Teclado numérico)</td><td>Cambia numero de "Cantidad", "Descuento" o "Precio"</td></tr>
+                        <tr><td>. (Teclado numérico)</td><td>Punto decimal.</td></tr>
+                        <tr><td>L / Ctrl + L</td><td>Abrir listado de clientes.</td></tr>
+                        <tr><td>Espacio / Ctrl + Espacio</td><td>Ir a vista de Pago.</td></tr>
+                        <tr><td>Suprimir</td><td>Elimina la linea de orden seleccionada.</td></tr>
+                        <tr><td>Arriba</td><td>Cambiar la linea de orden hacia arriba.</td></tr>
+                        <tr><td>Abajo</td><td>Cambiar la linea de orden hacia Abajo.</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Customer Screen</h3>
+                    <h3 style="margin-top:40px;">Lista de clientes</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Shortcut Key</th><th>Action Description</th>
+                            <th>Atajos de teclado</th><th>Descripcion</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Back to previous screen</td></tr>
-                        <tr><td>S</td><td>Customer search</td></tr>
-                        <tr><td>Arrow Up</td><td>Change selection of customer to up direction</td></tr>
-                        <tr><td>Arrow Down</td><td>Change selection of customer to down direction</td></tr>
-                        <tr><td>Enter</td><td>Set selected customer</td></tr>
-                        <tr><td>+ (Numpad)</td><td>Open new customer add form</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Cancelar e ir atras</td></tr>
+                        <tr><td>Ctrl+F</td><td>Buscar</td></tr>
+                        <tr><td>Arriba</td><td>Seleccionar anterior cliente hacia arriba.</td></tr>
+                        <tr><td>Abajo</td><td>Seleccionar siguiente cliente hacia Abajo.</td></tr>
+                        <tr><td>Enter</td><td>Seleccionar/Deseleccionar cliente.</td></tr>
+                        <tr><td>+ (Signo más)</td><td>Crear cliente</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Payment Screen</h3>
+                    <h3 style="margin-top:40px;">Vista de Pago</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Shortcut Key</th><th>Action Description</th>
+                            <th>Atajos de teclado</th><th>Descripcion</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Back to previous screen</td></tr>
-                        <tr><td>C</td><td>Open customer screen</td></tr>
-                        <tr><td>I</td><td>Select invoice to print invoice on receipt screen</td></tr>
-                        <tr><td>Page Up</td><td>Change payment method selection to up direction</td></tr>
-                        <tr><td>Page Down</td><td>Change payment method selection to down direction</td></tr>
-                        <tr><td>Spacebar</td><td>Choose selected payment method</td></tr>
-                        <tr><td>Arrow Up</td><td>Change payment line selection to up direction</td></tr>
-                        <tr><td>Arrow Down</td><td>Change payment line selection to down direction</td></tr>
-                        <tr><td>Delete</td><td>Delete selected payment line</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Cancelar e ir atras</td></tr>
+                        <tr><td>L / Ctrl + L</td><td>Abrir listado de clientes.</td></tr>
+                        <tr><td>I / Ctrl + I</td><td>Seleccionar/Deseleccionar imprimir Factura.</td></tr>
+                        <tr><td>Pagina arriba</td><td>Cambiar seleccion de metodo de pago hacia arriba.</td></tr>
+                        <tr><td>Pagina abajo</td><td>Cambiar seleccion de metodo de pago hacia abajo.</td></tr>
+                        <tr><td>Spacio</td><td>Elegit metodo de pago.</td></tr>
+                        <tr><td>Flecha arriba</td><td>Cambiar linea de pago hacia arriba.</td></tr>
+                        <tr><td>Flecha Abajo</td><td>Cambiar linea de pago hacia abajo.</td></tr>
+                        <tr><td>Delete</td><td>Eliminar metodo de pago seleccionado.</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Receipt Screen</h3>
+                    <h3 style="margin-top:40px;">Vista de recibo</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Shortcut Key</th><th>Action Description</th>
+                            <th>Atajos de teclado</th><th>Descripcion</th>
                         </tr>
-                        <tr><td width="25%">I</td><td width="75%">Print customer invoice receipt</td></tr>
-                        <tr><td>R</td><td>Print POS receipt</td></tr>
-                        <tr><td>Enter</td><td>Back to Home/POS screen</td></tr>
+                        <tr><td width="25%">I</td><td width="75%">Imprimir factura de cliente</td></tr>
+                        <tr><td>R</td><td>Imprimir recibo de pago POS</td></tr>
+                        <tr><td>Enter</td><td>Aceptar/Validar</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Shortcut Tips Modal</h3>
+                    <h3 style="margin-top:40px;">Otros</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Shortcut Key</th><th>Action Description</th>
+                            <th>Atajos de teclado</th><th>Descripcion</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Close popup modal</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Cerrar Actual</td></tr>
                     </table>
                 </div>
                 <footer class="footer">
                     <div class="button cancel">
-                        Cancel
+                        Cancelar
                     </div>
                 </footer>
             </div>

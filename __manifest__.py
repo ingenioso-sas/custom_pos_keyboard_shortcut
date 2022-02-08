@@ -12,7 +12,7 @@
     'license': "LGPL-3",
     'support': "imbipul9@gmail.com",
     'category': 'point of sale',
-    'version': '0.1',
+    'version': '13.0.0.0',
     'depends': ['point_of_sale'],
     'data': [
         'views/assets.xml',

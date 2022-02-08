@@ -39,6 +39,7 @@ odoo.define('custom_pos.screens', function (require) {
 
     var ProductScreenWidget = screens.ProductScreenWidget.include({
         init: function(parent, options){
+
             this._super(parent,options);
 
             var self = this;
@@ -50,53 +51,25 @@ odoo.define('custom_pos.screens', function (require) {
             this.numpad.replace(this.$('.placeholder-NumpadWidget'));
 
             this.product_screen_keydown_event_handler = function(event){
+
+                console.log("Shortcut key which: "+event.which);
+                
                 /* product screen key down events */
                 if(!$($(document).find(".product-screen")[0]).hasClass('oe_hidden')){
                     if(event.which == 113) {      // click on "F2" button
-                        $(document).find("div.product-screen div.middlepane span#shortcut_tips_btn").trigger("click");
-                    }
-                }
-
-                if(!$(document).find(".search-input").is(":focus") && !$($(document).find(".product-screen")[0]).hasClass('oe_hidden')){
-                    if(event.which == 81){  // click on "q" button
-                        self.numpad.state.changeMode('quantity');
-                    } else if(event.which == 68){   // click on "d" button
-                        self.numpad.state.changeMode('discount');
-                    } else if(event.which == 80){   // click on "p" button
-                        self.numpad.state.changeMode('price');
-                    } else if(event.which == 8){    // click on "Backspace" button
-                        self.numpad.state.deleteLastChar();
-                    } else if(event.which >= 96 && event.which <= 105) {    // click on numpad 1-9 and 0 button
-                        var newChar = String.fromCharCode(event.which - 48 );
-                        self.numpad.state.appendNewChar(newChar);
-                    } else if(event.which == 109) {     // click on numpad "-" button
-                        self.numpad.state.switchSign();
-                    } else if(event.which == 110) {     // click on numpad "." button
-                        self.numpad.state.appendNewChar('.');
-                    } else if(event.which == 67) {      // click on "c" button
-                        self.actionpad.gui.show_screen('clientlist');
-                    } else if(event.which == 32) {      // click on "space" button
-                        self.actionpad.gui.show_screen('payment');
-                    } else if(event.which == 46) {      // click on "Delete" button
-                        self.pos.get_order().remove_orderline(self.pos.get_order().get_selected_orderline());
-                    } else if(event.which == 38) {      // click on "up arrow" button
-                        $(document).find("div.product-screen ul.orderlines li.selected").prev('li.orderline').trigger('click');
-                    } else if(event.which == 40) {      // click on "down arrow" button
-                        $(document).find("div.product-screen ul.orderlines li.selected").next('li.orderline').trigger('click');
-                    } else if(event.which == 83) {      // click on "s" button
-                        $(document).find("div.product-screen div.rightpane div.searchbox input").focus();
-                        event.preventDefault();
+                        $(document).find("div.product-screen div.pads span#shortcut_tips_btn").trigger("click");
                     }
                 }
 
                 /* payment screen key down events */
                 if(!$($(document).find("div.payment-screen")[0]).hasClass('oe_hidden')){
-                    if (event.which == 27) {     // click on "Esc" button
+                    if (event.which == 27) {            // click on "Esc" button
                         $($(document).find("div.payment-screen")[0]).find("div.top-content span.back").trigger('click');
-                    } else if(event.which == 67) {             // click on "c" button
+                    } else if(event.which == 76) {      // click on "l" button
                         $($(document).find("div.payment-screen")[0]).find("div.js_set_customer").trigger('click');
                     } else if (event.which == 73) {     // click on "i" button
                         $($(document).find("div.payment-screen")[0]).find("div.payment-buttons div.js_invoice").trigger('click');
+                        return false;
                     } else if(event.which == 33) {      // click on "Page Up" button
                         if($($(document).find("div.payment-screen")[0]).find("div.paymentmethods div.highlight").length > 0){
                             var elem = $($(document).find("div.payment-screen")[0]).find("div.paymentmethods div.highlight");
@@ -148,40 +121,118 @@ odoo.define('custom_pos.screens', function (require) {
                         $($(document).find("div.payment-screen")[0]).find("table.paymentlines tbody tr.selected td.delete-button").trigger("click");
                     }
                 }
-
+                
+                if(!$($(document).find(".product-screen")[0]).hasClass('oe_hidden')){
+                    var isNotSearch = (!$(document).find("div.searchbox input").is(":focus"));
+                    switch(event.keyCode) {
+                        case 70: // F
+                            if(event.ctrlKey) { // Ctrl + F
+                                $(document).find("div.product-screen div.rightpane div.searchbox input").focus();
+                                event.preventDefault();
+                            }
+                            break;
+                        case 68: // D
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + D or D
+                                self.numpad.state.changeMode('discount');
+                                return false;
+                            }
+                            break;
+                        case 80: // P
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + P or P
+                                self.numpad.state.changeMode('price');
+                                return false;
+                            }
+                            break;
+                        case 67: // Ctrl+C
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + C or C
+                                self.numpad.state.changeMode('quantity');
+                            }
+                            break;
+                        case 9: // Ctrl+TAB
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + TAB or TAB
+                                self.numpad.state.switchSign();
+                                return false;
+                            }
+                            break;
+                        case 72: // Ctrl+H
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + H or H 
+                                $(document).find("div.product-screen header.rightpane-header span.breadcrumb-home").trigger('click');
+                                return false;
+                            }
+                        case 76: // Ctrl+L
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + L or L
+                                self.actionpad.gui.show_screen('clientlist');
+                                return false;
+                            }
+                            break;
+                        case 32: // Ctrl+Space
+                            if(event.ctrlKey || isNotSearch) { // Ctrl + Space or Space
+                                self.actionpad.gui.show_screen('payment');
+                            }
+                            break;
+                        case 38: // Ctrl+Up
+                            var fila=$(document).find("div.product-screen ul.orderlines li.selected").prev('li.orderline')
+                            fila.trigger('click');
+                            fila.focus()
+                            break;
+                        case 40: // Ctrl+Down
+                            var fila=$(document).find("div.product-screen ul.orderlines li.selected").next('li.orderline')
+                            fila.trigger('click');
+                            fila.focus()
+                            break;
+                    }
+                }
                 /* clientlist screen key down events */
                 if(!$($(document).find("div.clientlist-screen")[0]).hasClass('oe_hidden')){
-                    if (event.which == 27) {            // click on "Esc" button
-                        $($(document).find("div.clientlist-screen")[0]).find("span.back").trigger('click');
-                    } else if(event.which == 83) {      // click on "s" button
-                        $(document).find("div.clientlist-screen span.searchbox input").focus();
-                        event.preventDefault();
-                    } else if(event.which == 38) {      // click on "Arrow Up" button
-                        if($(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight").length > 0){
-                            $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight").prev("tr.client-line").click();
-                        }else{
-                            var clientLineLength = $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line").length;
-                            if(clientLineLength > 0){
-                                $($(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line")[clientLineLength-1]).click();
+                    
+                    console.log("switch: "+event.which+" - ctrlKey:"+event.ctrlKey+" - keyCode:"+event.keyCode);
+                    switch(event.which) {
+                        case 70: // F
+                            console.log("Shortcut key pressed: "+event.keyCode+" - ctrlKey:"+event.ctrlKey);
+                            if(event.ctrlKey) {
+                                $(document).find("div.clientlist-screen span.searchbox input").focus();
+                                event.preventDefault();
                             }
-                        }
-                    } else if(event.which == 40) {      // click on "Arrow Down" button
-                        if($(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight").length > 0){
-                            $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight").next("tr.client-line").click();
-                        }else{
-                            var clientLineLength = $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line").length;
-                            if(clientLineLength > 0){
-                                $($(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line")[0]).click();
+                            break;
+                        case 27: // Esc
+                            $($(document).find("div.clientlist-screen")[0]).find("span.back").trigger('click');
+                            break;
+                        case 38: // Arrow Up
+                            var fila=$(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight")
+                            if(fila.length > 0){
+                                fila.prev("tr.client-line").click();
+                                fila.focus()
+                            }else{
+                                fila = $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line")
+                                var clientLineLength = fila.length;
+                                if(clientLineLength > 0){
+                                    $(fila[clientLineLength-1]).click();
+                                    $(fila[clientLineLength-1]).focus();
+                                }
                             }
-                        }
-                    } else if(event.which == 13) {      // click on "Enter" button
-                        if(!$(document).find("div.clientlist-screen section.top-content span.next").hasClass('oe_hidden')){
-                            $(document).find("div.clientlist-screen section.top-content span.next").click();
-                        }
-                    } else if(event.which == 107) {     // click on numpad "+" button
-                        $(document).find("div.clientlist-screen section.top-content span.new-customer").click();
-                        $(document).find("div.clientlist-screen section.full-content section.client-details input.client-name").focus();
-                        event.preventDefault();
+                            break;
+                        case 40: // Arrow Down
+                            var fila=$(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.highlight")
+                            if(fila.length > 0){
+                                fila.next("tr.client-line").click();
+                            }else{
+                                fila = $(document).find("div.clientlist-screen table.client-list tbody.client-list-contents tr.client-line")
+                                var clientLineLength = fila.length;
+                                if(clientLineLength > 0){
+                                    $(fila[0]).click();
+                                }
+                            }
+                            break;
+                        case 13: // Enter
+                            if(!$(document).find("div.clientlist-screen section.top-content span.next").hasClass('oe_hidden')){
+                                $(document).find("div.clientlist-screen section.top-content span.next").click();
+                            }
+                            return false;
+                        case 107: // click on numpad "+" button
+                            $(document).find("div.clientlist-screen section.top-content span.new-customer").click();
+                            $(document).find("div.clientlist-screen section.full-content section.client-details input.client-name").focus();
+                            event.preventDefault();
+                            break;
                     }
                 }
 
@@ -193,6 +244,7 @@ odoo.define('custom_pos.screens', function (require) {
                         $($(document).find("div.receipt-screen")[0]).find("div.print").trigger("click");
                     } else if(event.which == 13){   // click on "Enter" button
                         $($(document).find("div.receipt-screen")[0]).find("div.top-content span.next").trigger("click");
+                        return false;
                     }
                 }
 
