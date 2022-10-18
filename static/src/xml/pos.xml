@@ -52,6 +52,8 @@
                         <tr><td>Suprimir</td><td>Elimina la linea de orden seleccionada.</td></tr>
                         <tr><td>Arriba</td><td>Cambiar la linea de orden hacia arriba.</td></tr>
                         <tr><td>Abajo</td><td>Cambiar la linea de orden hacia Abajo.</td></tr>
+                        <tr><td>Shift+(Arriba|Izquierda)</td><td>Seleccionar anterior producto en listado de productos.</td></tr>
+                        <tr><td>Shift+(Abajo|Derecha)</td><td>Seleccionar siguiente producto en listado de productos.</td></tr>
                     </table>
 
                     <h3 style="margin-top:40px;">Lista de clientes</h3>

@@ -134,18 +134,21 @@ odoo.define('custom_pos.screens', function (require) {
                         case 68: // D
                             if(event.ctrlKey || isNotSearch) { // Ctrl + D or D
                                 self.numpad.state.changeMode('discount');
+                                $(document).find("div.product-screen div.rightpane div.searchbox input").blur();
                                 return false;
                             }
                             break;
                         case 80: // P
                             if(event.ctrlKey || isNotSearch) { // Ctrl + P or P
                                 self.numpad.state.changeMode('price');
+                                $(document).find("div.product-screen div.rightpane div.searchbox input").blur();
                                 return false;
                             }
                             break;
                         case 67: // Ctrl+C
                             if(event.ctrlKey || isNotSearch) { // Ctrl + C or C
                                 self.numpad.state.changeMode('quantity');
+                                $(document).find("div.product-screen div.rightpane div.searchbox input").blur();
                             }
                             break;
                         case 9: // Ctrl+TAB
@@ -170,15 +173,35 @@ odoo.define('custom_pos.screens', function (require) {
                                 self.actionpad.gui.show_screen('payment');
                             }
                             break;
-                        case 38: // Ctrl+Up
-                            var fila=$(document).find("div.product-screen ul.orderlines li.selected").prev('li.orderline')
-                            fila.trigger('click');
-                            fila.focus()
+                        case 37: // left
+                        case 38: // Up
+                            if(event.shiftKey) { // Shift+Up - para seleccion de productos de stock
+                                var producto_selccionado=$(document).find("div.product-screen div.rightpane div.product-list-container .product-list article.product:focus").prev('article.product');
+                                if(producto_selccionado.length < 1){
+                                    producto_selccionado = $(document).find("div.product-screen div.rightpane div.product-list-container .product-list article.product")[0]
+                                }
+                                producto_selccionado.focus();
+                            
+                            } else { // Up - para seleccion de productos de linea de venta
+                                var fila=$(document).find("div.product-screen ul.orderlines li.selected").prev('li.orderline')
+                                fila.trigger('click');
+                                fila.focus();
+                            }
                             break;
-                        case 40: // Ctrl+Down
-                            var fila=$(document).find("div.product-screen ul.orderlines li.selected").next('li.orderline')
-                            fila.trigger('click');
-                            fila.focus()
+                        case 39: // rigth
+                        case 40: // Down
+                            if(event.shiftKey) { // Shift+Down - para seleccion de productos de stock
+                                var producto_selccionado=$(document).find("div.product-screen div.rightpane div.product-list-container .product-list article.product:focus").next('article.product');
+                                if(producto_selccionado.length < 1){
+                                    producto_selccionado = $(document).find("div.product-screen div.rightpane div.product-list-container .product-list article.product")[0]
+                                }
+                                producto_selccionado.focus();
+                            
+                            } else { // Down - para seleccion de productos de linea de venta
+                                var fila=$(document).find("div.product-screen ul.orderlines li.selected").next('li.orderline')
+                                fila.trigger('click');
+                                fila.focus();
+                            }
                             break;
                     }
                 }

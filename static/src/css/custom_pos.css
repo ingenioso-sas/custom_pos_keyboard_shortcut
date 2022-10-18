@@ -13,3 +13,11 @@ table.shortcut-tips-table th,td{
     padding: 6px 12px;
     border-bottom: 1px solid #dddddd;
 }
+
+article.product:focus {
+    border: 2px solid #e31212 !important;
+}
+
+.pos .category-list-scroller{
+    max-height:25vh !important;
+}
