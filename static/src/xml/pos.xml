@@ -24,88 +24,88 @@
     <t t-name="ShortcutTipsWidget">
         <div role="dialog" class="modal-dialog modal-dialog-shortcut-tips">
             <div class="popup popup-shortcut-tips" style="width:40%;height: 70%;">
-                <header class="title">Atajos de Teclado - Tips</header>
+                <header class="title">Keyboard Shortcut - Tips</header>
                 <div class="body" style="height:75%;overflow-y:scroll;">
-                    <h3>Instrucciones (LEER):</h3>
+                    <h3>Instructions (READ):</h3>
                     <div style="width:100%;text-align:left;">
                         <ul>
-                            <li style="font-size:16px;color:red;">Presionar la letra correspondiente activara el comando, por ejemplo para definir la cantidad presionar la tecla "C". Cuando el foco esta puesto en el campo de busqueda los comandos no funcionaran exepto <b>"TAB"</b> o <b>"F2"</b>, de clic en otra parte que no sea la busqueda o presione <b>"TAB"</b> para recuperar los comandos de letras o para forzar que los comandos funcionen aunque este el foco en busqueda, presionar la tecla <b>CTRL</b> seguida de la letra del comando, por ejemplo, para definir cantidad presionar <b>Ctrl+D</b>.</li>
-                            <li style="font-size:16px;color:red;">Presionar <b>"F2"</b> para mostrar esta ayuda.</li>
+                            <li style="font-size:16px;color:red;">Pressing the corresponding letter will activate the command. For example, to set the quantity, press the 'C' key. When the focus is on the search field, commands will not work except for <b>"TAB"</b> o <b>"F2"</b>,  click anywhere outside the search field or press<b>"TAB"</b>to restore letter commands. Alternatively, to force commands to work even when the focus is on the search field  <b>CTRL</b> key followed by the command letter,fFor example, to set the quantity, press <b>Ctrl+D</b>.</li>
+                            <li style="font-size:16px;color:red;">Press <b>"F2"</b> to show this help.</li>
                         </ul>
                     </div>
-                    <h3>Vista de los productos</h3>
+                    <h3>View of the products</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Atajos de teclado</th><th>Descripción</th>
+                            <th>Keyboard Shortcut</th><th>Description</th>
                         </tr>
-                        <tr><td width="25%">F2</td><td width="75%">Atajos de teclado - Tips</td></tr>
-                        <tr><td>Ctrl+F</td><td>Buscar</td></tr>
-                        <tr><td>Tab</td><td>Intercambia entre negativo y positivo la cantidad de la linea de producto seleccionado.</td></tr>
-                        <tr><td>C / Ctrl + C</td><td>Selecciona boton de "Cantidad" en el tablero numerico para cambiar la cantidad de la linea de producto.</td></tr>
-                        <tr><td>D / Ctrl + D</td><td>Selecciona boton de "Descuento" en el tablero numerico para cambiar el Descuento de la linea de producto.</td></tr>
-                        <tr><td>P / Ctrl + P</td><td>Selecciona boton de "Precio" en el tablero numerico850 para cambiar el Precio de la linea de producto.</td></tr>
-                        <tr><td>Retroceso</td><td>Elimina el ultimo numero seleccionado de "Cantidad", "Descuento" o "Precio"</td></tr>
-                        <tr><td>0-9 (Teclado numérico)</td><td>Cambia numero de "Cantidad", "Descuento" o "Precio"</td></tr>
-                        <tr><td>. (Teclado numérico)</td><td>Punto decimal.</td></tr>
-                        <tr><td>L / Ctrl + L</td><td>Abrir listado de clientes.</td></tr>
-                        <tr><td>Espacio / Ctrl + Espacio</td><td>Ir a vista de Pago.</td></tr>
-                        <tr><td>Suprimir</td><td>Elimina la linea de orden seleccionada.</td></tr>
-                        <tr><td>Arriba</td><td>Cambiar la linea de orden hacia arriba.</td></tr>
-                        <tr><td>Abajo</td><td>Cambiar la linea de orden hacia Abajo.</td></tr>
-                        <tr><td>Shift+(Arriba|Izquierda)</td><td>Seleccionar anterior producto en listado de productos.</td></tr>
-                        <tr><td>Shift+(Abajo|Derecha)</td><td>Seleccionar siguiente producto en listado de productos.</td></tr>
+                        <tr><td width="25%">F2</td><td width="75%">Keyboard Shortcut - Tips</td></tr>
+                        <tr><td>Ctrl+F</td><td>Search</td></tr>
+                        <tr><td>Tab</td><td>Toggle between negative and positive the quantity of the selected product line.</td></tr>
+                        <tr><td>C / Ctrl + C</td><td>Select the 'Quantity' button on the numeric keypad to change the quantity of the selected product line.</td></tr>
+                        <tr><td>D / Ctrl + D</td><td>Select the 'Discount' button on the numeric keypad to change the discount of the selected product line.</td></tr>
+                        <tr><td>P / Ctrl + P</td><td>Select the 'Price' button on the numeric keypad to change the price of the selected product line.</td></tr>
+                        <tr><td>Backspace</td><td>removes the last selected number from 'Quantity', 'Discount', or 'Price'</td></tr>
+                        <tr><td>0-9 (Numeric keypad)</td><td>Change the number for 'Quantity', 'Discount', or 'Price'</td></tr>
+                        <tr><td>. (Numeric keypad)</td><td>Decimal point.</td></tr>
+                        <tr><td>L / Ctrl + L</td><td>Open client list.</td></tr>
+                        <tr><td>Space / Ctrl + Space</td><td>Go to Payment view.</td></tr>
+                        <tr><td>Delete</td><td>Delete the selected order line..</td></tr>
+                        <tr><td>Up</td><td>Move the order line up.</td></tr>
+                        <tr><td>Down</td><td>Move the order line down.</td></tr>
+                        <tr><td>Shift+(Up|Left)</td><td>Select the previous product in the product list.</td></tr>
+                        <tr><td>Shift+(Down|Right)</td><td>Select the next product in the product list.</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Lista de clientes</h3>
+                    <h3 style="margin-top:40px;">Customer list</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Atajos de teclado</th><th>Descripcion</th>
+                            <th>Keyboard Shortcuts</th><th>Description</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Cancelar e ir atras</td></tr>
-                        <tr><td>Ctrl+F</td><td>Buscar</td></tr>
-                        <tr><td>Arriba</td><td>Seleccionar anterior cliente hacia arriba.</td></tr>
-                        <tr><td>Abajo</td><td>Seleccionar siguiente cliente hacia Abajo.</td></tr>
-                        <tr><td>Enter</td><td>Seleccionar/Deseleccionar cliente.</td></tr>
-                        <tr><td>+ (Signo más)</td><td>Crear cliente</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Cancel and go back</td></tr>
+                        <tr><td>Ctrl+F</td><td>Search</td></tr>
+                        <tr><td>Up</td><td>Select the previous customer above.</td></tr>
+                        <tr><td>Down</td><td>Select the next customer below.</td></tr>
+                        <tr><td>Enter</td><td>Select/Deselect customer.</td></tr>
+                        <tr><td>+ (Plus sign)</td><td>Create customer</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Vista de Pago</h3>
+                    <h3 style="margin-top:40px;">Payment View</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Atajos de teclado</th><th>Descripcion</th>
+                            <th>Keyboard Shortcuts</th><th>Description</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Cancelar e ir atras</td></tr>
-                        <tr><td>L / Ctrl + L</td><td>Abrir listado de clientes.</td></tr>
-                        <tr><td>I / Ctrl + I</td><td>Seleccionar/Deseleccionar imprimir Factura.</td></tr>
-                        <tr><td>Pagina arriba</td><td>Cambiar seleccion de metodo de pago hacia arriba.</td></tr>
-                        <tr><td>Pagina abajo</td><td>Cambiar seleccion de metodo de pago hacia abajo.</td></tr>
-                        <tr><td>Espacio</td><td>Elegir metodo de pago.</td></tr>
-                        <tr><td>Flecha arriba</td><td>Cambiar linea de pago hacia arriba.</td></tr>
-                        <tr><td>Flecha Abajo</td><td>Cambiar linea de pago hacia abajo.</td></tr>
-                        <tr><td>Delete</td><td>Eliminar metodo de pago seleccionado.</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Cancel and go back</td></tr>
+                        <tr><td>L / Ctrl + L</td><td>Open customer list.</td></tr>
+                        <tr><td>I / Ctrl + I</td><td>Select/Deselect print invoice.</td></tr>
+                        <tr><td>Page Up</td><td>Move payment method selection up.</td></tr>
+                        <tr><td>Page Down</td><td>Move payment method selection down.</td></tr>
+                        <tr><td>Space</td><td>Choose payment method.</td></tr>
+                        <tr><td>Up Arrow</td><td>Move payment line up.</td></tr>
+                        <tr><td>Down Arrow</td><td>Move payment line down.</td></tr>
+                        <tr><td>Delete</td><td>Delete selected payment method.</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Vista de recibo</h3>
+                    <h3 style="margin-top:40px;">Receipt View"</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Atajos de teclado</th><th>Descripcion</th>
+                            <th>Keyboard Shortcuts</th><th>Description</th>
                         </tr>
                         <!--<tr><td width="25%">I</td><td width="75%">Imprimir factura de cliente</td></tr>-->
-                        <tr><td>R</td><td>Imprimir recibo de pago POS</td></tr>
-                        <tr><td>Enter</td><td>Aceptar/Validar</td></tr>
+                        <tr><td>R</td><td>Print POS payment receipt</td></tr>
+                        <tr><td>Enter</td><td>Accept/Validate</td></tr>
                     </table>
 
-                    <h3 style="margin-top:40px;">Otros</h3>
+                    <h3 style="margin-top:40px;">Others</h3>
                     <table class="shortcut-tips-table">
                         <tr width="50%">
-                            <th>Atajos de teclado</th><th>Descripcion</th>
+                            <th>Keyboard Shortcuts</th><th>Description</th>
                         </tr>
-                        <tr><td width="25%">Esc</td><td width="75%">Cerrar Actual</td></tr>
+                        <tr><td width="25%">Esc</td><td width="75%">Close Current</td></tr>
                     </table>
                 </div>                
                 <footer class="footer">                        
                     <div class="button cancel">
-                        Cancelar                        
+                        Cancel                        
                     </div>
                 </footer>                                                
             </div>           
