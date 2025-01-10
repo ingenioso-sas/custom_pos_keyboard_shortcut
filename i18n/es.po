@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-30 18:00+0000\n"
 "PO-Revision-Date: 2025-01-10 17:29+0000\n"
-"Last-Translator: Julian Montero <jmontero@ingenioso.co>\n"
+"Last-Translator: Weblate Admin <weblate.admin@example.com>\n"
 "Language-Team: Spanish <http://weblate.cloud.ingenioso.co/projects/"
 "custom_pos_keyboard_shortcut/custom_pos_keyboard_shortcut/es/>\n"
 "Language: es\n"
@@ -214,7 +214,7 @@ msgstr "Abajo"
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Down Arrow"
-msgstr ""
+msgstr "Flecha abajo"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
