@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0-20230607\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-30 18:00+0000\n"
-"PO-Revision-Date: 2025-01-10 16:41+0000\n"
-"Last-Translator: Weblate Admin <weblate.admin@example.com>\n"
+"PO-Revision-Date: 2025-01-10 17:29+0000\n"
+"Last-Translator: Julian Montero <jmontero@ingenioso.co>\n"
 "Language-Team: Spanish <http://weblate.cloud.ingenioso.co/projects/"
 "custom_pos_keyboard_shortcut/custom_pos_keyboard_shortcut/es/>\n"
 "Language: es\n"
@@ -24,14 +24,14 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "\"F2\""
-msgstr ""
+msgstr "\"F2\""
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "\"TAB\""
-msgstr ""
+msgstr "\"TAB\""
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -78,14 +78,14 @@ msgstr "Retroceso"
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "C / Ctrl + C"
 msgstr "C / Ctrl + C"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "CTRL"
 msgstr "CTRL"
 
@@ -135,7 +135,7 @@ msgstr "Crear cliente"
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Ctrl+D"
 msgstr "Ctrl+D"
 
@@ -143,7 +143,7 @@ msgstr "Ctrl+D"
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Ctrl+F"
 msgstr "Ctrl+F"
 
@@ -157,7 +157,7 @@ msgstr "Lista de clientes"
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "D / Ctrl + D"
 msgstr "D / Ctrl + D"
 
@@ -222,7 +222,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Enter"
-msgstr ""
+msgstr "Enter"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -231,42 +231,42 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Esc"
-msgstr ""
+msgstr "Esc"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "F2"
-msgstr ""
+msgstr "F2"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Go to Payment view."
-msgstr ""
+msgstr "Ir a la vista de pagos."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "I / Ctrl + I"
-msgstr ""
+msgstr "I / Ctrl + I"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Instructions (READ):"
-msgstr ""
+msgstr "Instrucciones (LEER):"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "Atajo de teclado"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -274,7 +274,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Keyboard Shortcut - Tips"
-msgstr ""
+msgstr "Atajo de teclado - Consejos"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -284,7 +284,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Atajos de teclado"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -292,105 +292,105 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "L / Ctrl + L"
-msgstr ""
+msgstr "L / Ctrl + L"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move payment line down."
-msgstr ""
+msgstr "Mover la línea de pago hacia abajo."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move payment line up."
-msgstr ""
+msgstr "Mover la línea de pago hacia arriba."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move payment method selection down."
-msgstr ""
+msgstr "Mover la selección del método de pago hacia abajo."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move payment method selection up."
-msgstr ""
+msgstr "Mover la selección del método de pago hacia arriba."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move the order line down."
-msgstr ""
+msgstr "Mover la línea de pedido hacia abajo."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Move the order line up."
-msgstr ""
+msgstr "Mover la línea de pedido hacia arriba."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Open client list."
-msgstr ""
+msgstr "Abrir la lista de clientes."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Open customer list."
-msgstr ""
+msgstr "Abrir lista de clientes."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Others"
-msgstr ""
+msgstr "Otros"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "P / Ctrl + P"
-msgstr ""
+msgstr "P / Ctrl + P"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Page Down"
-msgstr ""
+msgstr "Página abajo"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Page Up"
-msgstr ""
+msgstr "Página arriba"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Payment View"
-msgstr ""
+msgstr "Vista de pagos"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Press"
-msgstr ""
+msgstr "Pulsar"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -401,20 +401,23 @@ msgid ""
 " set the quantity, press the 'C' key. When the focus is on the search field,"
 " commands will not work except for"
 msgstr ""
+"Al pulsar la letra correspondiente se activará el comando. Por ejemplo, para "
+"fijar la cantidad, pulse la tecla \"C\". Cuando el foco está en el campo de "
+"búsqueda, los comandos no funcionarán excepto"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Print POS payment receipt"
-msgstr ""
+msgstr "Imprimir recibo de pago POS"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Receipt View\""
-msgstr ""
+msgstr "Vista de recibos\""
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -422,7 +425,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -432,6 +435,8 @@ msgid ""
 "Select the 'Discount' button on the numeric keypad to change the discount of"
 " the selected product line."
 msgstr ""
+"Seleccione el botón \"Descuento\" del teclado numérico para modificar el "
+"descuento de la línea de productos seleccionada."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -441,6 +446,8 @@ msgid ""
 "Select the 'Price' button on the numeric keypad to change the price of the "
 "selected product line."
 msgstr ""
+"Seleccione el botón \"Precio\" del teclado numérico para modificar el precio "
+"de la línea de productos seleccionada."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -450,90 +457,92 @@ msgid ""
 "Select the 'Quantity' button on the numeric keypad to change the quantity of"
 " the selected product line."
 msgstr ""
+"Seleccione el botón \"Cantidad\" del teclado numérico para modificar la "
+"cantidad de la línea de productos seleccionada."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select the next customer below."
-msgstr ""
+msgstr "Seleccionar a continuación el siguiente cliente."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select the next product in the product list."
-msgstr ""
+msgstr "Seleccionar el siguiente producto de la lista de productos."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select the previous customer above."
-msgstr ""
+msgstr "Seleccionar el cliente anterior."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select the previous product in the product list."
-msgstr ""
+msgstr "Seleccionar el producto anterior en la lista de productos."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select/Deselect customer."
-msgstr ""
+msgstr "Seleccionar/Deseleccionar cliente."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Select/Deselect print invoice."
-msgstr ""
+msgstr "Seleccionar/Deseleccionar imprimir factura."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Shift+(Down|Right)"
-msgstr ""
+msgstr "Shift+(Abajo|Derecha)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Shift+(Up|Left)"
-msgstr ""
+msgstr "Shift+(Arriba|Izquierda)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Shortcut Tips (F2)"
-msgstr ""
+msgstr "Atajos (F2)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Space"
-msgstr ""
+msgstr "Espacio"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Space / Ctrl + Space"
-msgstr ""
+msgstr "Espacio / Ctrl + Espacio"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -543,6 +552,8 @@ msgid ""
 "Toggle between negative and positive the quantity of the selected product "
 "line."
 msgstr ""
+"Alternar entre negativo y positivo la cantidad de la línea de productos "
+"seleccionada."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -550,21 +561,21 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Up"
-msgstr ""
+msgstr "Arriba"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Up Arrow"
-msgstr ""
+msgstr "Flecha arriba"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "View of the products"
-msgstr ""
+msgstr "Vista de los productos"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -573,6 +584,7 @@ msgstr ""
 msgid ""
 "key followed by the command letter,fFor example, to set the quantity, press"
 msgstr ""
+"seguida de la letra de la orden,Por ejemplo, para ajustar la cantidad, pulse"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -581,6 +593,8 @@ msgstr ""
 msgid ""
 "removes the last selected number from 'Quantity', 'Discount', or 'Price'"
 msgstr ""
+"elimina el último número seleccionado de \"Cantidad\", \"Descuento\" o "
+"\"Precio\""
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -590,10 +604,12 @@ msgid ""
 "to restore letter commands. Alternatively, to force commands to work even "
 "when the focus is on the search field"
 msgstr ""
+"para restaurar los comandos de letras. Alternativamente, para forzar que los "
+"comandos funcionen incluso cuando el foco está en el campo de búsqueda"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "to show this help."
-msgstr ""
+msgstr "para mostrar esta ayuda."
