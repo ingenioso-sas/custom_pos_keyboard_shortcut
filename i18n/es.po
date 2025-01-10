@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-30 18:00+0000\n"
 "PO-Revision-Date: 2025-01-10 16:41+0000\n"
-"Last-Translator: Julian Montero <jmontero@ingenioso.co>\n"
+"Last-Translator: Weblate Admin <weblate.admin@example.com>\n"
 "Language-Team: Spanish <http://weblate.cloud.ingenioso.co/projects/"
 "custom_pos_keyboard_shortcut/custom_pos_keyboard_shortcut/es/>\n"
 "Language: es\n"
@@ -45,7 +45,7 @@ msgstr "+ (signo más)"
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid ",  click anywhere outside the search field or press"
-msgstr ",  . .haga clic fuera del campo de búsqueda o pulse"
+msgstr ",  haga clic fuera del campo de búsqueda o pulse"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -123,50 +123,50 @@ msgstr "Elija la forma de pago."
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Close Current"
-msgstr ""
+msgstr "Cerrar actual"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Create customer"
-msgstr ""
+msgstr "Crear cliente"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Ctrl+D"
-msgstr ""
+msgstr "Ctrl+D"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Ctrl+F"
-msgstr ""
+msgstr "Ctrl+F"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Customer list"
-msgstr ""
+msgstr "Lista de clientes"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "D / Ctrl + D"
-msgstr ""
+msgstr "D / Ctrl + D"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Decimal point."
-msgstr ""
+msgstr "Punto decimal."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -174,7 +174,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Delete"
-msgstr ""
+msgstr "Borrar"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
