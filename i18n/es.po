@@ -7,14 +7,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0-20230607\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-30 18:00+0000\n"
-"PO-Revision-Date: 2024-12-30 18:00+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-01-10 16:39+0000\n"
+"Last-Translator: Julian Montero <jmontero@ingenioso.co>\n"
+"Language-Team: Spanish <http://weblate.cloud.ingenioso.co/projects/"
+"custom_pos_keyboard_shortcut/custom_pos_keyboard_shortcut/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -36,56 +38,56 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "+ (Plus sign)"
-msgstr ""
+msgstr "+ (signo más)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid ",  click anywhere outside the search field or press"
-msgstr ""
+msgstr ",  . .haga clic fuera del campo de búsqueda o pulse"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid ". (Numeric keypad)"
-msgstr ""
+msgstr ". (Teclado numérico)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "0-9 (Numeric keypad)"
-msgstr ""
+msgstr "0-9 (teclado numérico)"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Accept/Validate"
-msgstr ""
+msgstr "Aceptar/Validar"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Backspace"
-msgstr ""
+msgstr "Retroceso"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "C / Ctrl + C"
-msgstr ""
+msgstr "C / Ctrl + C"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "CTRL"
-msgstr ""
+msgstr "CTRL"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
