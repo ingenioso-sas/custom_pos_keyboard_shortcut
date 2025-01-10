@@ -207,7 +207,7 @@ msgstr "Descripción"
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Down"
-msgstr ""
+msgstr "Abajo"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
