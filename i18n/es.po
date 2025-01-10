@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0-20230607\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-30 18:00+0000\n"
-"PO-Revision-Date: 2025-01-10 16:39+0000\n"
+"PO-Revision-Date: 2025-01-10 16:41+0000\n"
 "Last-Translator: Julian Montero <jmontero@ingenioso.co>\n"
 "Language-Team: Spanish <http://weblate.cloud.ingenioso.co/projects/"
 "custom_pos_keyboard_shortcut/custom_pos_keyboard_shortcut/es/>\n"
@@ -94,7 +94,7 @@ msgstr "CTRL"
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -102,21 +102,21 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Cancel and go back"
-msgstr ""
+msgstr "Cancelar y volver"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Change the number for 'Quantity', 'Discount', or 'Price'"
-msgstr ""
+msgstr "Cambie el número de \"Cantidad\", \"Descuento\" o \"Precio\""
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Choose payment method."
-msgstr ""
+msgstr "Elija la forma de pago."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
