@@ -181,14 +181,14 @@ msgstr "Borrar"
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Delete selected payment method."
-msgstr ""
+msgstr "Borrar el método de pago seleccionado."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Delete the selected order line.."
-msgstr ""
+msgstr "Borrar la línea de pedido seleccionada.."
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
@@ -199,7 +199,7 @@ msgstr ""
 #: code:addons/custom_pos_keyboard_shortcut/static/src/xml/pos.xml:0
 #, python-format
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. module: custom_pos_keyboard_shortcut
 #. openerp-web
