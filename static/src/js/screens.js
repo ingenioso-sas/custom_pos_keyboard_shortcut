@@ -51,7 +51,18 @@ odoo.define('custom_pos.screens', function (require) {
             this.numpad.replace(this.$('.placeholder-NumpadWidget'));
 
             this.product_screen_keydown_event_handler = function(event){
+                // Ignore shortcuts if user is typing in a text field, input, or editable element
+                var target = event.target || event.srcElement;
+                var tagName = target.tagName ? target.tagName.toLowerCase() : '';
+                if (tagName === 'input' || tagName === 'textarea' || target.isContentEditable) {
+                    return;
+                }
 
+                // Allow telemetry shortcut (Ctrl+Alt+G) to pass through
+                if ((event.ctrlKey || event.metaKey) && event.altKey && event.which === 71) {
+                    // Do not block; simply exit handler
+                    return;
+                }
                 console.log("Shortcut key which: "+event.which);
                 
                 /* product screen key down events */
@@ -162,6 +173,7 @@ odoo.define('custom_pos.screens', function (require) {
                                 $(document).find("div.product-screen header.rightpane-header span.breadcrumb-home").trigger('click');
                                 return false;
                             }
+                            break;
                         case 76: // Ctrl+L
                             if(event.ctrlKey || isNotSearch) { // Ctrl + L or L
                                 self.actionpad.gui.show_screen('clientlist');
